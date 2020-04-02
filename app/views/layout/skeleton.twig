@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="assets/css/vendor/animate.min.css" rel="stylesheet">
+    <link href="assets/css/main.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    {% include 'header.twig' %}
+    <main>
+      {% block main %}{% endblock %}
+    </main>
+    {% include 'footer.twig' %}
+
+    <script src="assets/js/vendor/libs.js"></script>
+    <script src="assets/js/main.min.js"></script>
+  </body>
+
+</html>

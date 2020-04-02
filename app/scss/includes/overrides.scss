@@ -1,0 +1,38 @@
+//- Config files
+@import 'configs/fonts';
+@import 'configs/vars';
+
+// Links hover
+a {
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}
+// Custom classes
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+html {
+  font-family: sans-serif;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  margin: 0;
+  font-size: 1rem;
+  text-align: left;
+  color: map-get($colors, fuscousGray);
+  font-weight: 300;
+  font-family: $global-font-family;
+  background-color: map-get($colors, white);
+}

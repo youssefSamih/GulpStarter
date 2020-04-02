@@ -1,0 +1,39 @@
+{% if items %}
+  {% if menu_level == 0 %}
+<ul class="navbar-nav mr-auto">
+  {% else %}
+  <ul class="menu">
+    {% endif %}
+    {% for item in items %}
+      <li class="nav-item">
+        <a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
+        <span class="icon icon-arrow_right"></span>
+        {% if item.submenu is defined %}
+
+          <ul class="dropdown-content">
+            {% for subItems in item.submenu %}
+              <li>
+                <a href="{{ subItems.url }}">{{ subItems.title }}</a>
+                <span class="icon icon-arrow_right"></span>
+                {% if subItems.submenuChild is defined %}
+                  <ul class="dropdown-child">
+
+                    {% for subItemsChild in subItems.submenuChild %}
+                      <li>
+                        <a
+                          href="{{ subItemsChild.url }}">{{ subItemsChild.title }}</a>
+                      </li>
+                    {% endfor %}
+
+                  </ul>
+                {% endif %}
+
+              </li>
+            {% endfor %}
+          </ul>
+
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+  {% endif %}

@@ -1,0 +1,14 @@
+{% for item in items %}
+  <div class="form-item">
+    {% if item.status == true %}
+      <input type="radio" name="{{ item.name }}" value="{{ item.label }}"
+             id="{{ item.label }}" checked>
+    {% else %}
+      <input type="radio" name="{{ item.name }}" value="{{ item.label }}"
+             id="{{ item.label }}">
+    {% endif %}
+    <label for="{{ item.label }}">
+      {{ item.label }}
+    </label>
+  </div>
+{% endfor %}

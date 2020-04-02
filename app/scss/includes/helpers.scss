@@ -1,0 +1,41 @@
+// Font weights
+.fw-light {
+  font-weight: 300;
+}
+.fw-regular {
+  font-weight: 400;
+}
+.fw-semi-bold {
+  font-weight: 600;
+}
+.fw-bold {
+  font-weight: 700;
+}
+.fw-extra-bold {
+  font-weight: 800;
+}
+// Mobile
+.mobile-only {
+  display: none !important;
+  @media #{$tablet_large} {
+    display: block !important;
+  }
+}
+.desktop-only {
+  display: block !important;
+  @media #{$tablet_large} {
+    display: none !important;
+  }
+}
+// Layout
+.lame-spaced {
+  padding: 30px 0;
+
+  &-not-bottom {
+    padding-bottom: 0;
+  }
+
+  &-not-top {
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,31 @@
+//- Config files
+@import './includes/configs/fonts';
+@import './includes/configs/vars';
+@import './includes/configs/animations';
+@import './includes/configs/mixin';
+@import './includes/configs/colors';
+//- Global files
+@import './includes/globals';
+@import './includes/helpers';
+//- Layout files
+@import './includes/layout/skeleton';
+@import './includes/layout/header';
+@import './includes/layout/footer';
+//- Elements files
+@import './includes/elements/form';
+@import './includes/elements/iframe';
+@import './includes/elements/input';
+@import './includes/elements/checkboxes';
+@import './includes/elements/radioboxes';
+@import './includes/elements/select';
+@import './includes/elements/buttons';
+//- Fragments files
+// Custom fragments calls should be here
+
+//- Lames files
+// Custom lames calls should be here
+
+//- Overrides
+@import './includes/overrides';
+//- Helpers
+@import './includes/helpers.scss';

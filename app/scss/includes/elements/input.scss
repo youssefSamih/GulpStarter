@@ -1,0 +1,39 @@
+// Input fill
+
+:-webkit-autofill,
+:-webkit-autofill:hover,
+:-webkit-autofill:focus,
+:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px map-get($colors, white) inset;
+  box-shadow: 0 0 0 1000px map-get($colors, white) inset;
+  border-color: map-get($colors, black);
+  font-size: 10px;
+}
+// Input global styles
+textarea,
+input[type='tel'],
+input[type='date'],
+input[type='search'],
+input[type='text'],
+input[type='password'],
+input[type='email'] {
+  background-color: map-get($colors, white);
+  border: 1px solid #ced4da;
+  box-shadow: none;
+  box-sizing: border-box;
+  display: block;
+  outline: none;
+  padding-left: 1rem;
+  width: 100%;
+  height: 40px;
+  min-width: 300px;
+  font-size: 15px;
+  @media #{$phone} {
+    min-width: auto;
+  }
+  &:invalid,
+  &.error {
+    border: 0.2rem solid map-get($colors, error);
+  }
+}
+

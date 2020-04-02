@@ -1,0 +1,62 @@
+// Fonts
+@mixin font($family: inherit, $color: inherit, $size: false, $ls: false, $lh: false, $fw: false, $tt: false, $fs: false) {
+  @if $family {
+    font-family: $family;
+  }
+  @if $color {
+    color: $color;
+  }
+  @if $size {
+    font-size: $size;
+  }
+  @if $ls {
+    letter-spacing: $ls;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+  @if $fw {
+    font-weight: $fw;
+  }
+  @if $tt {
+    text-transform: $tt;
+  }
+  @if $fs {
+    font-style: $fs;
+  }
+}
+
+// Transitions
+@mixin ease-in-out($property: all) {
+  transition: $property .3s ease-in-out;
+}
+
+@mixin cubic-ease($property: all) {
+  transition: $property .3s cubic-bezier(.645, .045, .355, 1);
+}
+
+@mixin cubic-ease-fast($property: all) {
+  transition: $property .1s cubic-bezier(.645, .045, .355, 1);
+}
+
+// Center with translate
+@mixin trh {
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%);
+}
+
+@mixin trv {
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+@mixin trhv {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

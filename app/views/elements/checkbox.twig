@@ -1,0 +1,12 @@
+{% for item in items %}
+  <div class="checkbox-items">
+    {% if item.status == true %}
+      <input id="{{ item.label }}" type="checkbox" name="{{ item.name }}"
+             value="yes" checked>
+    {% else %}
+      <input id="{{ item.label }}" type="checkbox" name="{{ item.name }}"
+             value="yes">
+    {% endif %}
+    <label for="{{ item.label }}">{{ item.label }}</label>
+  </div>
+{% endfor %}

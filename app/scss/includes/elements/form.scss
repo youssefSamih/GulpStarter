@@ -1,0 +1,22 @@
+// Forms
+form {
+  .form-control {
+    border-radius: 0;
+    padding: 10px;
+    transition: border .3s ease-in-out;
+
+    // States
+    &:focus {
+      box-shadow: 0 0 0 .2rem map-get($colors, transparent);
+    }
+
+    // Modifiers
+    &.error {
+      border: 1px solid map-get($colors, error);
+    }
+
+    &.valid {
+      border: 1px solid map-get($colors, success);
+    }
+  }
+}

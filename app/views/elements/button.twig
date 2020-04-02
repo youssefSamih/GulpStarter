@@ -1,0 +1,12 @@
+{#
+  btnstyle can be :  btn--more / btn--submit
+  type can be : link (<a>) / simple (<button>) / submit (type="button") / custom_clink (<a class="link">)
+  btnwhidth: btn-block(width : 100%) / empty (width : auto)
+#}
+{% if shape == "normal" %}
+  <{{ tag }} class="btn-eq {{ type }} {{ style }}">{{ value }}</{{ tag }}>
+{% elseif shape == "circle" %}
+  <{{ tag }} class="btn-eq {{ type }} {{ style }}">{{ value }} {{ icon }}</{{ tag }}>
+{% elseif submit == true %}
+  <{{ tag }} type="submit" class="btn-eq {{ type }} {{ style }}">{{ icon }}</{{ tag }}>
+{% endif %}

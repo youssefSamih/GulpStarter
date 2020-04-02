@@ -1,0 +1,33 @@
+// Font sizes
+$global-font: 20px;
+$global-font-family: 'Open Sans', sans-serif;
+
+// Titles
+$h1-font-size: 34px;
+$h2-font-size: 32px;
+$h3-font-size: 24px;
+$h4-font-size: 22px;
+$h5-font-size: 12px;
+$h6-font-size: 10px;
+
+// Inputs
+$input-font-size: 14px;
+$input-min-height: 50px;
+
+// Colors
+$colors: (
+  priamry:     #1affa9,
+  secondary:   #b8fff8,
+  white:       #fff,
+  black:       #000,
+  transparent: transparent,
+  error:       red,
+  success:     green,
+);
+
+
+// Media queries
+$phone: 'screen and (max-width: 768px)';
+$tablet: 'screen and (max-width: 992px)';
+$tablet_large: 'screen and (max-width: 1024px)';
+$desktop: 'screen and (min-width: 1024px)';

@@ -1,0 +1,31 @@
+// Selectboxes
+
+select,
+.select {
+  display: block;
+  padding: 0 1rem;
+  width: 100%;
+  appearance: none;
+  background-image: url('../imgs/icons/arrow-down.png');
+  background-position-x: calc(100% - 10px);
+  background-position-y: center;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  height: 40px;
+  &::-ms-expand {
+    display: none;
+  }
+  option {
+    height: 30px;
+    &:hover,
+    &:focus {
+      background-color: map-get($colors, black);
+      color: map-get($colors, white);
+    }
+    &:checked {
+      background-color: map-get($colors, black);
+      color: map-get($colors, white);
+    }
+  }
+}

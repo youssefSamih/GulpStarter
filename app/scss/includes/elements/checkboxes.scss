@@ -1,0 +1,37 @@
+// Checkboxes
+[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+  & + label,
+  & + div + label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 25px;
+  }
+  & + label::before,
+  & + div + label::before {
+    top: 4px;
+    left: 0;
+    font-family: oncf;
+    color: map-get($colors, white);
+    display: unset;
+    content: '';
+    background-image: url('../imgs/icons/unchecked.png');
+    background-size: 15px 15px;
+    width: 15px;
+    position: absolute;
+    height: 15px;
+  }
+  &:checked + label::before,
+  &:checked + div + label::before {
+    background-image: url('../imgs/icons/checked.png');
+  }
+  &.disabled + label,
+  &[disabled] + label {
+    color: map-get($colors, white);
+  }
+  &.disabled + label::before,
+  &[disabled] + label::before {
+    box-shadow: none;
+  }
+}
