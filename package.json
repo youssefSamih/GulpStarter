@@ -11,7 +11,7 @@
     "Workflow",
     "Automation"
   ],
-  "author": "Smile Maroc Frontend Team",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.8",
