@@ -32,7 +32,7 @@ A step by step series of examples that tell you have to get a development env ru
 ##### 1 - Clone repository using:
 
 ```
-git clone  https://git.smile.fr/smile-maroc-montage/GulpStarter.git .
+git clone  https://github.com/youssefSamih/GulpStarter.git .
 ```
 
 ##### 2 - Go to directory path:
